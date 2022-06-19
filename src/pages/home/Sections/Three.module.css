@@ -63,3 +63,25 @@
   height: 180px;
   pointer-events: none;
 }
+@media only screen and (max-width: 768px) {
+  .threeInner {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 90%;
+  }
+  .section1 {
+    width: 100%;
+    height: 50%;
+  }
+  .section2 {
+    width: 100%;
+    height: 50%;
+  }
+  .content {
+    width: 100%;
+  }
+  .vector {
+    width: 80px;
+    height: 80px;
+  }
+}

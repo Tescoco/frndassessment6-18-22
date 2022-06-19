@@ -10,7 +10,7 @@ function SearchRow({}: Props) {
         <div className={styles.searchIcon}>#</div>
         <input
           type={"text"}
-          placeholder="Nominee`s Name, Nominee`s Category"
+          placeholder="Nominees Name, Nominees Category"
           className={styles.searchInput}
         />
       </div>

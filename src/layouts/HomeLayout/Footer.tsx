@@ -61,7 +61,7 @@ function Footer({}: Props) {
                 height={97.53}
               />
             </div>
-            <div className={styles.logoText}></div>Celebrating Techies Globally
+            <div className={styles.logoText}>Celebrating Techies Globally</div>
           </div>
           <div className={styles.creditContainer}>
             © 2022 The Conected Awards - All rights reserved

@@ -11,10 +11,12 @@ function Two({}) {
   const Targets = ({ img, text }: TargetsProps): ReactElement => {
     return (
       <div className={styles.targets}>
-        <div className={styles.image}>
-          <Image src={img} alt="awearness" width={110} height={110} />
+        <div className={styles.targetsInner}>
+          <div className={styles.image}>
+            <Image src={img} alt="awearness" width={110} height={110} />
+          </div>
+          <div className={styles.targetText}>{text}</div>
         </div>
-        <div className={styles.targetText}>{text}</div>
       </div>
     );
   };

@@ -11,7 +11,7 @@ function Header({}: Props) {
         <div className={styles.logo}>
           <Image src="/img/logo.png" alt="logo" width={96} height={59.52} />
         </div>
-        <div className={styles.menu}>
+        <div className={styles.menuDesktop}>
           <div className={styles.menuInner}>
             <div className={styles.menuChild}>Categories</div>
             <div className={styles.menuChild}>Past editions</div>
@@ -20,7 +20,7 @@ function Header({}: Props) {
             <div className={styles.menuChild}>Make a donation</div>
           </div>
         </div>
-        <div className={styles.cta}>
+        <div className={styles.ctaDesktop}>
           <div className={styles.login}>Log In</div>
           <div className={styles.signup}>Create Account</div>
         </div>

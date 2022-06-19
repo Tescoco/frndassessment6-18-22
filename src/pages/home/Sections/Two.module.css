@@ -29,17 +29,25 @@
   font-size: 34px;
 }
 .targetsContent {
-  height: 50vh;
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 34px;
+  flex-wrap: wrap;
 }
-
 .targets {
-  width: 220px;
-  height: 220px;
+  width: 48%;
+  height: 50vh;
+  max-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.targetsInner {
+  height: 45vw;
+  width: 90%;
+  max-height: 220px;
   border: 2px solid #9E82B1;
   display: flex;
   justify-content: center;
@@ -49,4 +57,18 @@
 .targetText {
   font-size: 16px;
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .targets {
+    max-height: 220px;
+    width: 50%;
+    height: 50vw;
+    z-index: 1;
+  }
+  .twoContainer {
+    max-height: 650px;
+  }
+  .twoImageEmbed {
+    max-height: 650px;
+  }
 }
