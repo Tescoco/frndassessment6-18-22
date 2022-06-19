@@ -1,0 +1,52 @@
+.twoContainer {
+  width: 100%;
+  height: 90vh;
+  background: #1F0231;
+  position: relative;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.twoImageEmbed {
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  top: 0;
+}
+.imageEmbed {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  pointer-events: none;
+}
+.twoTitle {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+}
+.targetsContent {
+  height: 50vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34px;
+}
+
+.targets {
+  width: 220px;
+  height: 220px;
+  border: 2px solid #9E82B1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.targetText {
+  font-size: 16px;
+  font-weight: bold;
+}

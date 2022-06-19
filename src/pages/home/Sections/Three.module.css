@@ -1,0 +1,65 @@
+.threeContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.threeInner {
+  width: 90%;
+  height: 70%;
+  display: flex;
+}
+.section1 {
+  width: 50%;
+  height: 100%;
+}
+.section2 {
+  width: 50%;
+  height: 100%;
+}
+.imageContainer {
+  width: 100%;
+  max-width: 450px;
+  height: 390px;
+  pointer-events: none;
+}
+.header {
+  font-size: 30px;
+  height: 50px;
+  font-weight: 600;
+}
+.divider {
+  width: 88px;
+  height: 4px;
+  background: #FA9706;
+  border-radius: 6px;
+}
+.content {
+  height: 160px;
+  width: 60%;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+}
+.learnMoreCTA {
+  width: 131px;
+  height: 51px;
+  background: #3E0563;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.vector {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  pointer-events: none;
+}

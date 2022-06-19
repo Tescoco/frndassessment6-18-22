@@ -1,0 +1,58 @@
+.footerContainer {
+  background: #1F0231;
+  color: white;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.footerInner {
+  height: 75%;
+  width: 92%;
+}
+.footerRow1 {
+  width: 100%;
+  display: flex;
+  height: 58%;
+  font-size: 14px;
+}
+.footerRow2 {
+  width: 100%;
+  height: 36%;
+  display: flex;
+  font-size: 14px;
+}
+.footerMenu {
+  width: 260px;
+}
+.logoContainer {
+  width: 200px;
+}
+.logoText {
+  height: calc(100% - 125px);
+}
+.footerMenuTitle{
+  height: 40px;
+  color: orange;
+}
+.footerMenuContent {
+  height: 40px;
+  cursor: pointer;
+}
+.creditContainer {
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+.footerEmbedImage {
+  position: absolute;
+  height: 500px;
+  right: 0;
+}
+.footerImg {
+  height: 496px;
+  pointer-events: none;
+}

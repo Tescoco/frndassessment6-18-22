@@ -1,0 +1,46 @@
+.fiveContainer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fiveInner {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fiveContent {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fiveContentInner {
+  width: 80%;
+  height: 80%;
+}
+.fcImage {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fcTitle {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #3E0563;
+  font-weight: 600;
+}
+.fcContent {
+  font-size: 14px;
+  text-align: center;
+}

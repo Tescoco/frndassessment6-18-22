@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import HomeLayout from "../src/layouts/HomeLayout/HomeLayout";
-import Homepage from "../src/pages/home/Homepage";
+import Categories from "../src/pages/categories/Categories";
 
-const Home: NextPage = () => {
+const CategoriesPage: NextPage = () => {
   return (
     <HomeLayout>
-      <Homepage />
+      <Categories />
     </HomeLayout>
   );
 };
 
-export default Home;
+export default CategoriesPage;

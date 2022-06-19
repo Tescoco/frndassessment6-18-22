@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import HomeLayout from "../src/layouts/HomeLayout/HomeLayout";
-import Homepage from "../src/pages/home/Homepage";
+import Vote from "../src/pages/vote/Vote";
 
-const Home: NextPage = () => {
+const VotePage: NextPage = () => {
   return (
     <HomeLayout>
-      <Homepage />
+      <Vote />
     </HomeLayout>
   );
 };
 
-export default Home;
+export default VotePage;
