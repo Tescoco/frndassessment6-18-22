@@ -47,14 +47,48 @@
 }
 .s2Img {
   width: 80%;
-  height: 100%;
+  height: 50vw;
+  max-height: 400px;
 }
 .s1Header {
   color: #0C0114;
   font-size: 38px;
   font-weight: 600;
-  height: 60px;
+  padding-bottom: 20px;
 }
 .s1Text {
   width: 75%;
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 335px;
+  }
+  .bannerImg {
+    height: 335px;
+  }
+  .row {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section1 {
+    width: 100%;
+    height: 100%;
+  }
+  .section2 {
+    width: 100%;
+    height: 390px;
+    align-items: center;
+  }
+  .s1Header {
+    font-size: 26px;
+  }
+  .s1Text {
+    width: 100%;
+  }
+  .s2Img {
+    width: 100%;
+    height: 320px;
+  }
 }

@@ -57,3 +57,12 @@
   color: #3E0563;
   font-weight: 600;
 }
+@media only screen and (max-width: 768px) {
+  .pastEdition {
+    max-width: 500px;
+  }
+  .peImg {
+    width: 320px;
+    height: 320px;
+  }
+}

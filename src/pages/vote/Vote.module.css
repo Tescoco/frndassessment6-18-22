@@ -135,3 +135,15 @@
   color: #3E0563;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .topup {
+    display: none;
+  }
+  .voteHighLight {
+   font-size: 38px;
+  }
+  .PContainer { 
+    max-width: 400px;
+    height: 350px;
+  }
+}
