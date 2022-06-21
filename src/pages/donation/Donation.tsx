@@ -67,6 +67,10 @@ function Donation({}: Props) {
         </div>
       </div>
       <div className={styles.halfContainerMobile}>
+        <div className={styles.header1}>Make a Donation</div>
+        <div className={styles.header2}>
+          Make a contribution to the growth of technology in Africa
+        </div>
         <img
           className={styles.donateImg}
           src="/img/donateimage.png"
@@ -94,6 +98,24 @@ function Donation({}: Props) {
           industry. Lorem Ipsum has been the industry s standard dummy text ever
           since the 1500s, when an unknown printer
         </div>
+        <ul>
+          <li className={styles.pointedList}>
+            The Connected Hack-ton in Major Cities across Africa
+          </li>
+          <li className={styles.pointedList}>
+            The Peer to Gear Competition for Secondary School Students in Africa{" "}
+          </li>
+          <li className={styles.pointedList}>
+            Marathon Events across various Cities in Africa{" "}
+          </li>
+          <li className={styles.pointedList}>
+            Tech-awareness across various schools, towns and villages in Africa{" "}
+          </li>
+          <li className={styles.pointedList}>
+            Empowering more ladies in tech to bring a balance to the African
+            ecosystem
+          </li>
+        </ul>
       </div>
     </div>
   );

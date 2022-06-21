@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { ReactElement } from "react";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import SearchRow from "../home/Sections/SearchRow";
 import styles from "./Categories.module.css";
 
@@ -21,7 +22,9 @@ function Categories({}) {
             />
           </div>
           <div className={styles.categoryTitle}>{title}</div>
-          <div className={styles.categoryArrow}>#</div>
+          <div className={styles.categoryArrow}>
+            <HiOutlineArrowNarrowRight fontSize={22} />
+          </div>
         </div>
       </div>
     );
