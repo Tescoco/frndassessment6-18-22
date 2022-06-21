@@ -37,105 +37,107 @@ function Header({}) {
     );
   };
   return (
-    <div className={styles.headerContainer}>
-      <div className={styles.headerInner}>
-        <div
-          onClick={() => {
-            handleNav("/");
-          }}
-          className={styles.logo}
-        >
-          <Image src="/img/logo.png" alt="logo" width={96} height={59.52} />
-        </div>
-        <div className={styles.menuDesktop}>
-          <div className={styles.menuInner}>
-            <div
-              onClick={() => {
-                handleNav("categories");
-              }}
-              className={styles.menuChild}
-            >
-              Categories
-            </div>
-            <div
-              onClick={() => {
-                handleNav("past-editions");
-              }}
-              className={styles.menuChild}
-            >
-              Past editions
-            </div>
-            <div
-              onClick={() => {
-                handleNav("future-editions");
-              }}
-              className={styles.menuChild}
-            >
-              Future editions
-            </div>
-            <div
-              onClick={() => {
-                handleNav("about-us");
-              }}
-              className={styles.menuChild}
-            >
-              About us
-            </div>
-            <div
-              onClick={() => {
-                handleNav("donation");
-              }}
-              className={styles.menuChild}
-            >
-              Make a donation
+    <div className={styles.headerContainerMain}>
+      <div className={styles.headerContainer}>
+        <div className={styles.headerInner}>
+          <div
+            onClick={() => {
+              handleNav("/");
+            }}
+            className={styles.logo}
+          >
+            <Image src="/img/logo.png" alt="logo" width={96} height={59.52} />
+          </div>
+          <div className={styles.menuDesktop}>
+            <div className={styles.menuInner}>
+              <div
+                onClick={() => {
+                  handleNav("categories");
+                }}
+                className={styles.menuChild}
+              >
+                Categories
+              </div>
+              <div
+                onClick={() => {
+                  handleNav("past-editions");
+                }}
+                className={styles.menuChild}
+              >
+                Past editions
+              </div>
+              <div
+                onClick={() => {
+                  handleNav("future-editions");
+                }}
+                className={styles.menuChild}
+              >
+                Future editions
+              </div>
+              <div
+                onClick={() => {
+                  handleNav("about-us");
+                }}
+                className={styles.menuChild}
+              >
+                About us
+              </div>
+              <div
+                onClick={() => {
+                  handleNav("donation");
+                }}
+                className={styles.menuChild}
+              >
+                Make a donation
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.menuMobile}>
-          {isOpen ? (
-            <GrClose onClick={() => setIsOpen(false)} size={28} />
-          ) : (
-            <RiMenuLine onClick={() => setIsOpen(true)} size={28} />
+          <div className={styles.menuMobile}>
+            {isOpen ? (
+              <GrClose onClick={() => setIsOpen(false)} size={28} />
+            ) : (
+              <RiMenuLine onClick={() => setIsOpen(true)} size={28} />
+            )}
+          </div>
+          {isOpen && (
+            <div className={styles.menuMobileContainer}>
+              <div className={styles.menuMobileInner}>
+                <MenuMobileChild url="categories" content="Categories" />
+                <MenuMobileChild url="past-editions" content="Past editions" />
+                <MenuMobileChild
+                  url="future-editions"
+                  content="Future editions"
+                />
+                <MenuMobileChild url="about-us" content="About us" />
+                <MenuMobileChild url="donation" content="Make a donation" />
+                <MenuMobileChild url="login" content="Log In" />
+                <MenuMobileChild url="signup" content="Create account" />
+              </div>
+            </div>
           )}
-        </div>
-        {isOpen && (
-          <div className={styles.menuMobileContainer}>
-            <div className={styles.menuMobileInner}>
-              <MenuMobileChild url="categories" content="Categories" />
-              <MenuMobileChild url="past-editions" content="Past editions" />
-              <MenuMobileChild
-                url="future-editions"
-                content="Future editions"
-              />
-              <MenuMobileChild url="about-us" content="About us" />
-              <MenuMobileChild url="donation" content="Make a donation" />
-              <MenuMobileChild url="login" content="Log In" />
-              <MenuMobileChild url="signup" content="Create account" />
+
+          <div className={styles.ctaDesktop}>
+            <div
+              onClick={() => {
+                handleNav("login");
+              }}
+              className={styles.login}
+            >
+              Log In
+            </div>
+            <div
+              onClick={() => {
+                handleNav("signup");
+              }}
+              className={styles.signup}
+            >
+              Create Account
             </div>
           </div>
-        )}
-
-        <div className={styles.ctaDesktop}>
-          <div
-            onClick={() => {
-              handleNav("login");
-            }}
-            className={styles.login}
-          >
-            Log In
-          </div>
-          <div
-            onClick={() => {
-              handleNav("signup");
-            }}
-            className={styles.signup}
-          >
-            Create Account
-          </div>
         </div>
+        <div className={styles.headerDivider}></div>
+        {showProgress && <LinearDeterminate />}
       </div>
-      <div className={styles.headerDivider}></div>
-      {showProgress && <LinearDeterminate />}
     </div>
   );
 }

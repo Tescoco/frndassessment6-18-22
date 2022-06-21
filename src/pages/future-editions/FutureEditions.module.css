@@ -1,0 +1,81 @@
+.categoriesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.categoriesInner {
+  width: 93%;
+}
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.headerText {
+  color: #0C0114;
+  font-size: 26px;
+  font-weight: 600;
+}
+.categories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin-top: 30px;
+}
+.category {
+  width: 50%;
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 238px;
+}
+.categoryInner {
+  width: 90%;
+  max-width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+  border-radius: 8px;
+}
+.categoryIcon {
+  height: 30%;  
+}
+.categoryTitle {
+  height: 30%;
+  color: #0C0114;
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+}
+.categoryArrow {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  color: #3E0563;
+}
+.headerText2 {
+  color: #434A54;
+}
+.feButtonCTA {
+  width: 70%;
+  background-color: #3E0563;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}

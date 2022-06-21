@@ -5,6 +5,14 @@
   background-color: white;
   align-items:center;
   flex-direction: column;
+  position: fixed;
+  z-index: 999;
+
+}
+.headerContainerMain {
+  height: 77px;
+  width: 100%;
+  position: relative;
 }
 .headerInner {
   display: flex;
