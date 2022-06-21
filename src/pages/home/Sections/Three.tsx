@@ -26,7 +26,7 @@ function Three({}: Props) {
             will be distracted by the readable content of a page when looking at
             its layout. The point of using Lorem Ipsum is that it has a
             more-or-less normal distribution of letters, as opposed to using
-            'Content here, content here', making it look like readable English.
+            Content here, content here , making it look like readable English.
           </div>
           <div className={styles.learnMoreCTA}>Learn more</div>
         </div>

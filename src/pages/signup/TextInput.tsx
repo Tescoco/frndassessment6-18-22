@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SignUp.module.css";
 
 type Props = {
-  name: string;
+  name?: string;
   type: string;
 };
 

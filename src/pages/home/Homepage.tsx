@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Homepage.module.css";
 import Five from "./Sections/Five";
 import Four from "./Sections/Four";
 import One from "./Sections/One";

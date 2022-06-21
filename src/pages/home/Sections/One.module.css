@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #BABABA;
 }
 .searchInput {
   background-color: inherit;
@@ -70,6 +71,14 @@
 }
 .viewAllCategory {
   font-weight: 700;
+  display: flex;
+}
+.rightArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding-top: 1px;
 }
 @media only screen and (max-width: 768px) {
    .searchIcon {

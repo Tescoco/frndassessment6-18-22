@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import BtnCTA from "./BtnCTA";
 import PhoneNumber from "./PhoneNumber";
 import styles from "./SignUp.module.css";
 import TextInput from "./TextInput";
@@ -13,7 +14,7 @@ function SignUp({}: Props) {
       <div className={styles.signupInner}>
         <div className={styles.signupMain}>
           <div className={styles.header1}>
-            Time to vote your favourite Techie, let's make this amazing!
+            Time to vote your favourite Techie, let s make this amazing!
           </div>
           <div className={styles.header2}>Create an Account</div>
           <div className={styles.header3}>
@@ -62,13 +63,13 @@ function SignUp({}: Props) {
             <TextInput name={"Set Password"} type={"password"} />
             <TextInput name={"Gender"} type={"text"} />
             <div className={styles.agreement}>
-              By registering you agree to Techtrend Africa's Terms of Use and
+              By registering you agree to Techtrend Africa s Terms of Use and
               Privacy Policy
               {/*  <span className={styles.highlight}></span>
               and
               <span className={styles.highlight}>Privacy Policy</span>*/}
             </div>
-            <div className={styles.btnCTA}>Create my account</div>
+            <BtnCTA />
           </div>
         </div>
       </div>
