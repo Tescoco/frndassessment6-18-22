@@ -13,7 +13,7 @@ function Two({}) {
       <div className={styles.targets}>
         <div className={styles.targetsInner}>
           <div className={styles.image}>
-            <Image src={img} alt="awearness" width={110} height={110} />
+            <Image src={img} alt="awearness" width={100} height={100} />
           </div>
           <div className={styles.targetText}>{text}</div>
         </div>
