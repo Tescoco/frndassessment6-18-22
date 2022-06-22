@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import BasicModal from "../../utils/modal/modal";
 import styles from "./Buy.module.css";
 
 type ListItemsProps = {
@@ -8,6 +9,12 @@ type ListItemsProps = {
 };
 
 function Buy({}) {
+  const [open, setOpen] = useState(false);
+
+  const handleModal = () => {
+    setOpen(!open);
+  };
+
   const ListItems = ({ height, price, votes }: ListItemsProps) => {
     return (
       <div style={{ height }} className={styles.listItem}>
@@ -17,7 +24,9 @@ function Buy({}) {
         </div>
         <div className={styles.half2}>
           <div className={styles.price}>${price}</div>
-          <div className={styles.buyButton}>Buy</div>
+          <div onClick={handleModal} className={styles.buyButton}>
+            Buy
+          </div>
         </div>
       </div>
     );
@@ -31,7 +40,9 @@ function Buy({}) {
         </div>
         <div className={styles.half2Mobile}>
           <div className={styles.price}>${price}</div>
-          <div className={styles.buyButton}>Buy</div>
+          <div onClick={handleModal} className={styles.buyButton}>
+            Buy
+          </div>
         </div>
       </div>
     );
@@ -69,6 +80,15 @@ function Buy({}) {
           </div>
         </div>
       </div>
+      <BasicModal
+        btnText="Go to voting page"
+        text={
+          "You have successfully Increased your voting power. Go and make your favorite candidate win!"
+        }
+        open={open}
+        handleModal={handleModal}
+        img="/img/rocket.png"
+      />
     </>
   );
 }

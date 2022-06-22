@@ -1,0 +1,96 @@
+.nominateContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #1F0231;
+  min-height: 100vh;
+}
+.nominateImage {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  pointer-events: none;
+}
+.nominateInner {
+  width: 94%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: white;
+  margin-top: 50px;
+  z-index: 1;
+
+}
+.nominateMain {
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.browse {
+  color: #1F0231;
+}
+.nominateTitle {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.nominateTitle2 {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  color: #434A54;
+}
+.finePrint {
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.email {
+  color: #3E0563;
+  font-weight: 600;
+}
+.socialInput {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label {
+   width: 30%;
+   height: 35px;
+   display: flex;
+   align-items: flex-end;
+   font-size: 12px;
+}
+.socialIcon {
+  height: 45px;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+.socialText {
+  width: 100%;
+  font-weight: 600;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+}
+.btnCTA {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .nominateImage {
+    display: none;
+  }
+  .nominateContainer {
+    background-color: white;
+  }
+}

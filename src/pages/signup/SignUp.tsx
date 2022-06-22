@@ -69,7 +69,7 @@ function SignUp({}: Props) {
               and
               <span className={styles.highlight}>Privacy Policy</span>*/}
             </div>
-            <BtnCTA />
+            <BtnCTA content={"Create my account"} />
           </div>
         </div>
       </div>
